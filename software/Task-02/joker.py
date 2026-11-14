@@ -13,7 +13,7 @@ def fetch():
 
 
 def display(json):
-    if json["error"] == False:
+    if not json["error"]:
         rich.print(f"[bold magenta]{json['joke']}[/bold magenta]\n")
         rich.print("-" * 80)
 
